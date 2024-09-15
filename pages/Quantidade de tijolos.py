@@ -19,8 +19,8 @@ def mostrar_tipos_tijolos(altura, largura):
         quantidade = calcular_tijolos(altura, largura, qtd)
         st.write(f"{tipo} = {qtd} tijolos por m² -> Total: {quantidade:.0f} tijolos")
 
-altura = st.number_input('Digite a altura da Parede (m)', min_value=0.0, format="%.2f")
-largura = st.number_input('Digite a largura da Parede (m)', min_value=0.0, format="%.2f")
+altura = st.number_input('Digite a altura da Parede (M)', min_value=0.0, format="%.2f")
+largura = st.number_input('Digite a largura da Parede (M)', min_value=0.0, format="%.2f")
 
 if st.button('Calcular'):
     if altura > 0 and largura > 0:
